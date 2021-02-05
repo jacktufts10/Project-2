@@ -145,16 +145,26 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   transform: rotate(-135deg);
   margin-top: -9px;
 }
+.main-image {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0 40px;
+  visibility: hidden;
+}
 .img-container {
   position: relative;
   overflow: hidden;
-  img {
+}
+  img{
     width: 100%;
-    // position: absolute;
+    
     opacity: 0;
   }
   
-  &:after {
+  .img-container:after {
     content: "";
     position: absolute;
     width: 0%;

@@ -1,14 +1,12 @@
-$("document") .ready(function(){
 
-    $("poem-text-column").click(function() {
-        $("nav").toggle();
-    });
-
+  
+    
+    
 const tl = new TimelineMax();
 
 const rule = CSSRulePlugin.getRule(".img-container:after");
 
-tl.to("body", { duration: 0.5, css: { visibility: "visible" } })
+tl.to("main-image", { duration: 0.5, css: { visibility: "visible" } })
   .to(rule, { duration: 1, width: "100%", ease: "Power2.ease" })
   .to(rule, { duration: 0, right: 0, left: "unset" })
   .to(rule, { duration: 1, width: "0%", ease: "Power2.ease" })
@@ -20,4 +18,4 @@ tl.to("body", { duration: 0.5, css: { visibility: "visible" } })
     delay: -1.2
   });
 
-});
+
