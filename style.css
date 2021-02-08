@@ -22,11 +22,22 @@ body {
  
 }
 h1 {
-  flex-wrap: wrap;
-  position: absolute;
+  margin: 140px;
+  margin-top: -40px;
+  margin-bottom: -40px;
+  display:flex;
+  position:relative;
   font-family: Helvetica, sans-serif;
   font-weight: lighter;
   z-index: 100;
+}
+.flextext2 {
+  margin-left: 820px;
+  display: flex;
+  position:relative;
+  margin-top: 255px;
+  margin-bottom: -250px;
+
 }
 
 h2 {
@@ -75,15 +86,16 @@ p {
 .mainInner div{
   display:table-cell;
   vertical-align: middle;
-  font-size: 3em;
-  font-weight: bold;
+  font-size: 14pt;
+  font-weight:normal;
   letter-spacing: 1.25px;
+  font-family: helvetica,sans-serif;
 }
 #sidebarMenu {
   height: fit-content;
   position: fixed;
   left: 0;
-  width: 175px;
+  width: fit-content;
   margin-top: 0px;
   transform: translateX(-250px);
   transition: transform 250ms ease-in-out;
@@ -98,7 +110,7 @@ p {
 .sidebarMenuInner li{
   list-style: none;
   color: #fff;
-  font-weight: lighter;
+  font-weight: normal;
   padding: 20px;
   cursor: pointer;
   
@@ -109,8 +121,8 @@ p {
   color: rgba(255, 255, 255, 0.50);
 }
 .sidebarMenuInner li a{
-  color: #fff;
-  font-weight: lighter;
+  color:white;
+  font-weight: normal;
   cursor: pointer;
   text-decoration: none;
 }
