@@ -319,3 +319,15 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     transform-origin: 100% 50%;
   }
 }
+
+
+#cursor {
+  position: fixed;
+  border: solid 1px black;
+	width: 60px; 
+	height: 60px; 
+  border-radius: 50%; 
+  z-index: 1000;
+}
+
+
