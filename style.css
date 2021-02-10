@@ -241,10 +241,13 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
-  animation: pic 1s;
+  /*animation: pic 1s; */
   transform-origin: 50% 50%;
   animation-fill-mode: forwards;
   object-fit: cover;
+}
+.main-container img.anim {
+  animation: pic 1s;
 }
 .main-container .reveal-artifact {
   width: 100%;
@@ -253,7 +256,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   position: absolute;
   transform: scaleX(0);
   transform-origin: 0% 50%;
-  animation: anim 1s;
+  /*animation: anim 1s;*/
 }
 
 .second-container img {
@@ -263,10 +266,16 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
-  animation: pic 1s;
+  /*animation: pic 1s;*/
   transform-origin: 50% 50%;
   animation-fill-mode: forwards;
   object-fit: cover;
+}
+.second-container img.anim {
+  animation: pic 1s;
+}
+.reveal-artifact.anim {
+  animation: anim 1s;
 }
 .second-container .reveal-artifact {
   width: 100%;
@@ -275,9 +284,9 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   position: absolute;
   transform: scaleX(0);
   transform-origin: 0% 50%;
-  animation: anim 1s;
-  
+  /*animation: anim 1s;*/
 }
+
 
 @keyframes translate {
   to {
@@ -322,6 +331,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
 
 #cursor {
+  pointer-events: none;
   position: fixed;
   border: solid 1px black;
 	width: 60px; 
